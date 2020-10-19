@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Fin Reset*/
+
+/*Body*/
+
+body {
+	background-image: linear-gradient(to bottom, #000000, #ffffff); 
+}
+/*Fin Body*/
+
+/*Wrapper*/
+.wrapper{
+	width: 1180px;
+	align-content: center;
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 20px #888888;
+}
+
+/*Fin Wrapper*/
+
+/*Header*/
+
+.title {
+	text-align: center;
+	color: #139C19;
+	text-shadow: 1px 1px #000000;
+	font-size: 3em;
+	font-weight: bold;
+	padding: 20px; 
+}
+
+/*Fin Header*/
+
+/*Nav*/
+
+nav {
+	padding-bottom: 30px;
+}
+
+.main-nav {
+	width:  980px;
+	background-image: linear-gradient(to bottom, #444444, #111111);
+	border-radius: 50px;
+	margin: 0 auto;
+	box-shadow: 3px 3px 2px #9c9c9c
+		
+}
+.main-nav > .item-menu {
+	display: inline-block;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.main-nav > li:hover {
+	background-image: linear-gradient(to bottom, #19B123, #139C19);
+}
+
+.main-nav > li > a {
+	display:inline-block; 
+	font-weight:bold;
+	line-height:30px; 
+	color:#F2F2F2; 
+	text-decoration:none; 
+	font-size:13px; 
+	text-align: center;
+}
+
+.main-nav > li > a:hover {
+	text-shadow: 2px 2px #000000;
+	color: #FAFAFA
+}
+
+.main-nav > li > .panneau {
+	width:560px; 
+	position:absolute; 
+	display: none;
+	border : 5px solid #111111;
+}
+
+.main-nav > li:hover > .panneau {
+	display: block;
+}
+
+.panneau dl {
+	display: block;
+	font-weight:bold;
+	background-image: linear-gradient(to bottom, #19B123, #139C19);
+	height: 176px;
+	width: 280px;
+	text-align: center;
+}
+.panneau dt {
+	font-size:1em;
+	color: #000000;
+	padding: 10px;
+	padding: 20px 5px 5px 0;
+	text-align: center;
+}
+.panneau dd a {
+	display:block; 
+	color:#F2F2F2; 
+	font-size:0.8em;
+	text-decoration:none; 
+	padding: 7px 0 0 5px;
+	text-align: center;
+}
+.panneau dd a:hover {
+	color:#EDEDED; 
+	text-shadow: 1px 1px #000000;
+}
+
+.panneau {
+	column-count: 2;
+}
+
+img {
+	margin-left: -8px;
+	margin-bottom: -4px;
+}
+
+/*Fin Nav*/
+
+/*Main*/
+
+.puce {
+	position: absolute;
+	background-color: #139C19;
+	width: 20px;
+	height: 30px;
+	border-radius: 15px 0 0 15px;
+}
+
+article {
+	display: table-cell;
+	box-sizing: border-box;
+	vertical-align: bottom;
+}
+.main-article {
+	width: 70%;
+	padding: 50px 15px 0px 40px;
+}
+
+.main-article h2 {
+	color: #139C19;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 5px 0 10px 30px;
+}
+
+.introduction {
+	font-style: italic;
+	color: #777777;
+}
+
+p {
+	color: #000000;
+	padding: 40px 0 40px 0;
+}
+
+.img-board {
+	float: left;
+	width: 300px;
+	margin: 0 20px 20px 0;
+}
+
+.colonne {
+	column-count: 2;
+	column-rule: 1px solid #000000;
+}
+
+.sticker-container {
+	box-shadow: 3px 3px 20px #cccccc;
+	width: 10%;
+	padding: 20px;
+}
+
+.sticker-container h2 {
+	color: #139C19;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.sticker p {
+	padding: 20px 40px 20px 0px;
+}
+
+/*Fin Main*/
+
+/*Footer*/
+
+footer {
+
+	padding: 25px;
+	text-align: center;
+	border-top: 1px solid #139c19;
+}
+
+footer li {
+	display: inline-block;
+	color:  #e9f6e9;
+	background-image: linear-gradient(to bottom, #19b123, #139c19);
+	border-radius: 50px;
+}
+
+footer a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 25px;
+	color: #e9f6e9;
+}
+
+footer a:hover {
+	color: #000000;
+	background-color: rgba(21,165,29,0.5);
+	border-radius: 50px;
+}
+/*Fin Footer*/
+
+
